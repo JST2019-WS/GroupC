@@ -38,8 +38,7 @@ with open("userportfolio30d.csv", newline = "") as csvFile:
         # linebreak += 1
     print(set(securites))
     print("No. of. Companies:  {0}".format(len(set(companies))))
-    print("No.of Users: {0}".format(len(set(users))))
-    
+    print("No.of Users: {0}".format(len(set(users))))   
     print("No.of countries: {0}".format(len(set(countries))))
     
     
