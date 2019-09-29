@@ -13,7 +13,14 @@ def extractCountry(ids):
         #print("No countries in this one: {0}".format(ids))
         countries =""
     return countries 
-
+def getCreditRatings():
+    credit_ratings = {}
+    with open("countryRating.csv", newline="") as ctrRating:
+        ratings = csv.reader(ctrRating)
+        for count, row in enumerate(ratings):
+            if count > 0:
+                credit_ratings[row[0]] = row[5]
+        return credit_ratings
 
 #main function used to open the csv and do things on it
 with open("userportfolio30d.csv", newline = "") as csvFile:
@@ -36,6 +43,8 @@ with open("userportfolio30d.csv", newline = "") as csvFile:
         # if linebreak == 10:
         #     break
         # linebreak += 1
+    credit_ratings = getCreditRatings()
+    print(credit_ratings)
     print(set(securites))
     print("No. of. Companies:  {0}".format(len(set(companies))))
     print("No.of Users: {0}".format(len(set(users))))   
