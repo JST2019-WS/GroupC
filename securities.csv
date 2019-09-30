@@ -1,0 +1,16 @@
+Bonds, short_term, new, safe
+Stock, long_term, experienced, risky
+ETF, , new, safe
+Warrant,long, experienced, risky
+Option,,experienced, risky
+Cryptocurrency,,experienced,very-risky
+Currency,short-term,semi-experienced,safe
+Funds, long-term, semi-experienced, safe
+Resources, short-term, experienced, safe
+Knock out warrant, ,experienced ,very-risky
+certificate,
+ETFS Physical Gold,
+Certificate Index,
+umlaufrendite,
+Index, long-term, new, safe
+Future,,experienced,risky

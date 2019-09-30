@@ -7,12 +7,19 @@ linebreak = 0
 #Extracts the country name from the ids 
 def extractCountry(ids):
     string = re.findall("[A-Z]",ids)
+    good = re.match("[a-zA-Z0-9_]*name[a-zA-Z0-9_]*", "hey My name is Ashish")
+    if good:
+        print("found it")
+        ht = re.sub("name", "", "hey My name is Ashish")
+        print(ht)
     try:
         countries = string[0]+ string[1]
     except:
         #print("No countries in this one: {0}".format(ids))
         countries =""
     return countries 
+
+
 def getCreditRatings():
     credit_ratings = {}
     with open("countryRating.csv", newline="") as ctrRating:
@@ -44,10 +51,10 @@ with open("userportfolio30d.csv", newline = "") as csvFile:
         #     break
         # linebreak += 1
     credit_ratings = getCreditRatings()
+
     print(credit_ratings)
     print(set(securites))
     print("No. of. Companies:  {0}".format(len(set(companies))))
     print("No.of Users: {0}".format(len(set(users))))   
     print("No.of countries: {0}".format(len(set(countries))))
-    
     
