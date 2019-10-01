@@ -1,17 +1,16 @@
 import re
 import csv
+import pandas
+import pycountry
 from openpyxl import workbook, load_workbook 
-
 linebreak = 0
 
 #Extracts the country name from the ids 
+
+
+
 def extractCountry(ids):
     string = re.findall("[A-Z]",ids)
-    good = re.match("[a-zA-Z0-9_]*name[a-zA-Z0-9_]*", "hey My name is Ashish")
-    if good:
-        print("found it")
-        ht = re.sub("name", "", "hey My name is Ashish")
-        print(ht)
     try:
         countries = string[0]+ string[1]
     except:
@@ -22,7 +21,7 @@ def extractCountry(ids):
 
 def getCreditRatings():
     credit_ratings = {}
-    with open("countryRating.csv", newline="") as ctrRating:
+    with open("data/countryRating.csv", newline="") as ctrRating:
         ratings = csv.reader(ctrRating)
         for count, row in enumerate(ratings):
             if count > 0:
@@ -30,7 +29,7 @@ def getCreditRatings():
         return credit_ratings
 
 #main function used to open the csv and do things on it
-with open("userportfolio30d.csv", newline = "") as csvFile:
+with open("data/userportfolio30d.csv", newline = "") as csvFile:
     securites = []
     companies = []
     users = []

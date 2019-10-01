@@ -1,0 +1,36 @@
+Security, Length, Experience, Risk, Capital
+Bonds, short_term, new, safe,2
+Stock, long_term, experienced, risky,2
+ETF, 3, new, safe,2
+Warrant,long, experienced, risky,2
+Option,,experienced, risky,2
+Cryptocurrency,,experienced,very-risky,2
+Currency,short-term,semi-experienced,safe,2
+Funds, long-term, semi-experienced, safe,2
+Resources, short-term, experienced, safe,2
+Knock out warrant, ,experienced ,very-risky,2
+certificate,,,,2
+ETFS Physical Gold,,,,2
+Certificate Index,,,,,2
+umlaufrendite,,,,,2
+Index, long-term, new, safe,2
+Future,,experienced,risky,2
+
+
+RES,2,2,1,2
+KNO,1,5,5,1  
+ZER,,,,1
+ETC,
+ETN,
+INT,
+IND,3,1,1,
+FUT,,
+
+Bonds, 1, 1, 1, 3
+Stocks, 5, 5, 4, 3
+ETF, 4, 1, 1, 4
+Options, 2, 5, 5, 1
+Warrants, 5, 5, 4, 2
+Cryptocurrencies, 1, 5, 5, 1
+Currency, 1, 3, 2, 4
+Funds, 5, 3, 2, 3
