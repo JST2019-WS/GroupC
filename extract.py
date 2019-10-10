@@ -120,7 +120,7 @@ def main():
     print(data.head(100))
 
 
-    data.to_csv("extracted_data.csv", index = False)
+    data.to_csv("data/extracted_data.csv", index = False)
 
 if __name__ == '__main__':
     main()
